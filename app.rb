@@ -24,11 +24,26 @@ def new_score(score)
 end
 
 def read_scores
-  $SCORES = File.open($SCORE_FILE) { |file| YAML.load(file) }
+  if File.exist?($SCORE_FILE)
+    $SCORES = File.open($SCORE_FILE) { |file| YAML.load(file) }
+  else
+    $SCORES = default_scores
+    write_scores
+  end
 end
 
 def write_scores
   File.open($SCORE_FILE, 'w') { |file| file.write(YAML.dump($SCORES)) }
+end
+
+def default_scores
+  [
+    { user: 'Anonymous', score: '5' },
+    { user: 'Anonymous', score: '4' },
+    { user: 'Anonymous', score: '3' },
+    { user: 'Anonymous', score: '2' },
+    { user: 'Anonymous', score: '1' }
+  ]
 end
 
 configure do
