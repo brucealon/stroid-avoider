@@ -16,7 +16,7 @@ end
 def new_score(score)
   read_scores if $SCORES.nil?
   
-  scores = $SCORES.append(score)
+  scores = $SCORES.push(score)
   scores.sort! { |a, b| a[:score].to_i <=> b[:score].to_i }
   scores.reverse!
   $SCORES = scores[0..($SCORE_COUNT - 1)]
