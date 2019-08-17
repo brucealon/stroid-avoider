@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <title>Stroid Avoider</title>
+    <link type="text/css" rel="stylesheet" href="/stroid.css">
+    <script src="/jquery-3.4.1.min.js"></script>
+    <script src="/stroid.js"></script>
+  </head>
+  
+  <body>
+    <div id="header-container">
+      <center>
+        <h3>Stroid Avoider</h3>
+      </center>
+    </div>
+    <div id="game-container">
+      <div id="canvas-container">
+        <canvas id="stroid-avoider"></canvas>
+      </div>
+      
+      <div id="score-container">
+        <div class="score-heading">Current Score</div>
+        <div id="score-current" class="score-box">
+          <input class="player-name" type="text" value="Anonymous"/>
+          <div class="player-score">0</div>
+        </div>
+        
+        <div class="score-heading">High Score</div>
+        <div id="score-high-1" class="score-box">
+          <div class="player-name">Anonymous</div>
+          <div class="player-score">0</div>
+        </div>
+        <div id="score-high-2" class="score-box">
+          <div class="player-name">Anonymous</div>
+          <div class="player-score">0</div>
+        </div>
+        <div id="score-high-3" class="score-box">
+          <div class="player-name">Anonymous</div>
+          <div class="player-score">0</div>
+        </div>
+        <div id="score-high-4" class="score-box">
+          <div class="player-name">Anonymous</div>
+          <div class="player-score">0</div>
+        </div>
+        <div id="score-high-5" class="score-box">
+          <div class="player-name">Anonymous</div>
+          <div class="player-score">0</div>
+        </div>
+      </div>
+
+      <div id="buttons-container">
+        <button id="button-play" onclick="window.stroidAvoider.togglePause()">Play</button>
+        <button id="button-new" onclick="window.stroidAvoider.newGame()" disabled>New Game</button>
+      </div>
+    </div>
+  </body>
+</html>

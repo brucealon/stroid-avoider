@@ -1,0 +1,68 @@
+
+body {
+    background-color: black;
+}
+
+#game-container {
+    width: 100%;
+    height: 600px;
+}
+
+#canvas-container {
+    width: 85%;
+    height: 100%;
+    float: left;
+}
+
+#score-container {
+    margin-left: 85%;
+    width: 15%;
+    height: 300px;
+    color: white;
+}
+
+h3 {
+    color: #BBBBBB;
+}
+
+button {
+    background-color: gray;
+    color: white;
+}
+
+#button-play {
+    width: 75px;
+}
+
+#button-new {
+    width: 100px;
+    display: none;
+}
+
+.score-box {
+    width: 75%;
+    padding-bottom: 15px;
+}
+
+.score-heading {
+    background-color: #666666;
+    text-align: center;
+}
+
+input {
+    border: 1px solid gray;
+    height: 17px;
+    margin: 0;
+    background-color: #000000;
+    color: white;
+}
+
+.player-name {
+    width: 60%;
+    float: left;
+}
+
+.player-score {
+    margin-left: 60%;
+    text-align: right;
+}
